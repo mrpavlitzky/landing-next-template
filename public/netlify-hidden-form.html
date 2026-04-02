@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Netlify hidden form</title>
+  </head>
+  <body>
+    <!--
+      Plik wykrywany przez Netlify podczas buildu.
+      Rejestruje backend formularza "kontakt" dla obsługi AJAX z komponentu React.
+      Każde pole musi mieć odpowiednik w ContactForm.tsx (ta sama wartość atrybutu name).
+    -->
+    <form name="kontakt" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="kontakt" />
+      <input name="bot-field" />
+      <input name="imie" />
+      <input name="email" />
+      <input name="telefon" />
+      <select name="temat"></select>
+      <textarea name="wiadomosc"></textarea>
+      <input name="zgoda" type="checkbox" />
+    </form>
+  </body>
+</html>
